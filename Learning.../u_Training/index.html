@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // ES5 yazımı ile function tanımlama
+        var es5 = function(a, b, c)
+        {
+         return a + b+ c;
+        } 
+
+        sonuc = es5 (56, 76, 100);
+        console.log(sonuc);
+
+        // ES6 ile Arrow Function
+        const es6 = (a, b, c) => a+b+c;
+        
+        sonucc = es6(34, 54, 65);
+        console.log(sonucc);
+
+        // ES6 Arrayler ile Çalışma Filter Kullanımı
+        const sayilar = [35, 43, 56, 84, 12, 14,3, 8, 9];
+        const ciftSayiKontrol = (sayi) => sayi % 2 == 0;
+        
+        var ciftSayilar = sayilar.filter(ciftSayiKontrol);
+        console.log(ciftSayilar)
+
+        // ES6 Arrayler ile Çalışma Map Kullanımı
+        const sayilar_2 = [35, 43, 56, 84, 12, 14,3, 8, 9];
+        const ciftSayiKontrol_2 = (sayi) => sayi % 2 == 0;
+        
+        var ciftSayilar_2 = sayilar.map(ciftSayiKontrol);
+        console.log(ciftSayilar_2)
+
+        // ES6 Arrayler ile Çalışma, Map Kullanımı v2
+        const ürünler =
+        [
+            {ad: "Mercedes", fiyat:3000000, güc:1300 },
+            {ad: "BMW", fiyat:2250000, güc:1000 },
+            {ad: "Auidi", fiyat:2750000, güc:1190 },
+            {ad: "Nissan", fiyat:3800000, güc:1210 }
+        ]
+
+        const sonuccc = ürünler.filter(urun => urun.fiyat > 2750000 && urun.güc > 1250).map(urun => urun.ad);
+        console.log(sonuccc);
+
+        // spread operatör kullanımı
+        const sayilarr1 = [12, 43,32, 18];
+        const sayilarr2 = [64, 55];
+        const sayilarr3 = [63, 0, 99];
+
+        console.log(...sayilarr1, ...sayilarr2, ...sayilarr3);
+
+        // referance copy
+        const sayii = [65, 34, 52];
+        var sayi2;
+
+        sayi2 = [...sayii];
+        sayi2[1] = 43;
+
+        console.log(sayi2, sayii);
+
+        // rest parameters
+        function toplam(...değişkenler)
+        {
+            let sonucs = 0;
+            for(let index of değişkenler)
+            {
+                sonucs += index;
+                
+            }
+            return sonucs;
+        }
+
+        console.log(toplam(2, 5, 8));
+        console.log(toplam(2, 5, 8, 90, 5, 11, 65));
+
+        // array Destructuring
+        let burclar = ["yay", 12, "hayalperest"]
+
+        let [burcu, ay, özellik] = burclar;
+
+        console.log(burcu, ay, özellik);
+
+        // array Destructuring Objects
+        let takımlar =  
+        {
+                ad: "Galatasaray",
+                kadrodgr: 215,
+                TD: "Okan Buruk"
+        }
+
+        let {ad, kadrodgr, TD, en_degerli_oyuncu = "Tete", stad = "RAMS PARK"} = takımlar;
+
+        console.log(ad, kadrodgr, TD, en_degerli_oyuncu, stad);
+
+        // Maps Kullanımı
+        const hayallarim = new Map();
+
+        hayallarim.set("YAZILIM", "Gelişmek, gelişmek ve sadece gelişmek. En sonunda da Büyük Bir Şirket Kurmak");
+        hayallarim.set("İSTANBUL-İSTİNYE", "DGS ile İstanbul'a gitmek. İstinye Üniversitesini Kazanmak");
+        hayallarim.set("VÜCUT", "Mükemmel Bir vücuda sahip olmak");
+        hayallarim.set("DÜNYA", "Dünya Turu Yapmak ");
+        hayallarim.set("GELİŞİM", "Sadece GELİŞMEK Her Alanda Her Anlamda");
+
+        console.log(hayallarim);
+
+        console.log(hayallarim.get("YAZILIM"));
+        console.log(hayallarim.get("İSTANBUL-İSTİNYE"));
+        console.log(hayallarim.get("VÜCUT"));
+        console.log(hayallarim.get("DÜNYA"));
+        console.log(hayallarim.get("GELİŞİM"));
+
+        console.log(hayallarim.size);
+
+        for(let [key, value] of hayallarim.entries())
+        {
+            console.log(key, value);
+        }
+
+        // Set Kullanımı
+        const sayiilar = new Set();
+
+        sayiilar.add(42);
+        sayiilar.add(674);
+        sayiilar.add(421);
+        sayiilar.add(40);
+
+        console.log(sayiilar);
+
+        for(let x of sayiilar)
+        {
+            console.log(x)
+        };
+
+        // Class Oluşturma
+        class Kişisel_Gelişim_Ölçer
+        {
+            constructor(duygusallık, kıyafet_tercihi_bolluk, spor, kitap_okuma_durumu)
+            {
+                this.ad = ad;
+                this.duygusallık = duygusallık;
+                this.kıyafet_tercihi_bolluk = kıyafet_tercihi_bolluk;
+                this.spor = spor;
+                this.kitap_okuma_durumu = kitap_okuma_durumu;
+            }
+
+            kişiliğiniz ()
+            {
+                let sonuc = this.duygusallık + this.kıyafet_tercihi_bolluk + this.spor + this.kitap_okuma_durumu;
+
+                if(sonuc > 32 && sonuc < 36 )
+                {
+                    console.log("Siz Gelişim için doğmuşsunuz. Hesaplamalara göre Siz bir GELİŞİM ABİDESİ İNSANSINIZ");
+                    return ;
+                }
+                else if( sonuc > 36)
+                {
+                    console.log("Sizde Gelişim için her şeyden fazlaca var. Ve bu gücünüzü kontrol etmekte bir o kadar zorlaşıyor. Hesaplamalara göre eğer bu gücün altında ezilmez ve kontrol edebilirseniz kendinizi BAŞARI - GÜÇ - ZENGİNLİK sizin için birer basit oyuncağa dönüşebilir. Her şey sizin elinizde. BAŞARILAR");
+                    return ;
+                }
+                else if( sonuc > 26 && sonuc < 31)
+                {
+                    console.log("Gelişim için diğerlerinden biraz daha fazla uğraşmalısınız. Hesaplamalara göre siz NORMAL hızda bir gelişim çizgisinde ilerleyeceksiniz");
+                    return ;
+                }
+                else
+                {
+                    console.log("Gelişim için ÇOOOOK çabalamalısınız. Hesaplamalara göre DÜŞÜK hızda bir gelişim hızı ivmesi tutturabilirsiniz");
+                    return ;
+                }
+            }
+            
+        }
+
+        let ishak = new Kişisel_Gelişim_Ölçer(10, 6, 10, 8);
+
+        ishak.kişiliğiniz();
+        
+
+    </script>
+</body>
+</html>
