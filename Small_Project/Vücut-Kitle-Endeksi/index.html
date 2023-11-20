@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vücut Kitle Endeksi</title>
+        <style>
+            body
+            {
+                background-image: url(./sports-running-track-on-mountain-rczi01x109dztrm6.jpg);
+                background-size: cover;
+                margin: 0;
+            }
+            
+            .container
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                height: 100vh;
+                width: 100%;
+                background-color: rgb(0, 0, 0, 0.3);
+            }
+
+            .btn
+            {
+                border: 0.13rem solid black;
+                background-color: white;
+                border-radius: 0.7rem;
+                padding: 0.5rem 1.71rem;
+                box-shadow: 0 0 0.1rem black;
+                transition: 0.5s;
+            }
+
+            .btn:hover
+            {
+                box-shadow: 0 0 0.87rem black;
+                opacity: 0.7;
+            }
+
+            .input-group input
+            {
+                background-color: rgb(255, 255, 255);
+                border: none;
+                border-radius: 1rem;
+                border-bottom: 0.2rem solid black;
+                color: rgb(0, 0, 0);
+                padding: 0.5rem 2rem 0.5rem 0.7rem;
+                margin-left: 0.7rem;
+                margin-right: 0.7rem;
+                opacity: 0.8;
+                transition: 0.3s;
+            }
+
+            .input-group input:active
+            {
+                opacity: 1;
+            }
+
+            .input-group input:blank
+            {
+                opacity: 1;
+            }
+
+            .title
+            {
+                color: rgb(0, 0, 0);
+            }
+
+            .son
+            {
+                color: white;
+                font-size: 1.1rem;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="head">
+                <h2 class="title">Vücut Kitle Endeksi</h2>
+            </div>
+            <div class="input-group">
+                <input type="text" id="boy-veri" placeholder="Boyunuzu Giriniz ">
+                <input type="text" id="kg-veri" placeholder="Kilonuzu Giriniz ">
+            </div>
+            <button class="btn" id="button" type="button" >HESAPLA</button>
+            <div id="sonuc" class="style-sonuc"></div>
+        </div>
+     
+        <script src="../Vücut-Kitle-Endeksi/script.js"></script>
+    </body>
+</html>

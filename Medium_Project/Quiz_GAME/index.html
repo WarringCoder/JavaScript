@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Game</title>
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" 
+        />
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;300;400;500;600&family=Roboto+Condensed:ital,wght@1,100;1,300&display=swap" 
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./img/pngwing.com (36).png">
+    </head>
+    <body>   
+         <!----------------------------- Giriş kısmı ve Butonların olduğu Kısım ----------------------------->   
+        <div class="title-container">
+            <p class="title-p">İstediğin Kategoriyi Seç</p>
+            <span class="title-span">OYUNA BAŞLA</span>
+            <div class="title-icon">
+                <i class="fa-brands fa-nfc-directional"></i>
+            </div>
+        </div>
+        <div class="start-container">
+            <div class="button-container">
+                <button class="btn" id="y-btn"><i class="fa-solid fa-microchip icon"></i>YAZILIM</button>
+                <button class="btn" id="t-btn"><i class="fa-solid fa-wifi"></i>TEKNOLOJİ</button>
+                <button class="btn" id="u-btn"><i class="fa-solid fa-satellite"></i>UZAY</button>
+                <button class="btn" id="d-btn"><i class="fa-solid fa-earth-americas"></i>DÜNYA</button>
+                <button class="btn" id="d-btn"><i class="fa-solid fa-ranking-star"></i>SPOR</button>
+                <button class="btn" id="d-btn"><i class="fa-solid fa-futbol"></i>FUTBOL</button> 
+                <button class="btn" id="d-btn"><i class="fa-solid fa-passport"></i>GENEL KÜLTÜR</button>
+                <button class="btn" id="d-btn"><i class="fa-solid fa-landmark"></i>TARİH</button>            
+                <button class="btn" id="d-btn"><i class="fa-solid fa-infinity"></i>MATEMATİK</button>            
+                <button class="btn" id="d-btn"><i class="fa-solid fa-book-open"></i>EDEBİYAT</button>            
+                <button class="btn" id="d-btn"><i class="fa-solid fa-language"></i>İNGİLİZCE</button>            
+                <button class="btn" id="d-btn"><i class="fa-solid fa-map-location-dot"></i>SEYEHAT</button>
+                <button class="btn" id="d-btn"><i class="fa-solid fa-book-bookmark"></i>KİTAPLAR</button>            
+                <button class="btn" id="d-btn"><i class="fa-solid fa-venus"></i>KADINLAR</button>            
+                <button class="btn" id="d-btn"><i class="fa-solid fa-music"></i>MÜZİK</button>            
+                <button class="btn" id="d-btn"><i class="fa-solid fa-wand-magic-sparkles"></i>KARIŞIK</button>            
+            </div>
+        </div>
+        <!----------------------------- Giriş kısmı ve Butonların olduğu Kısım ----------------------------->
+
+        <!----------------------------------- Quiz Ekranının Olduğu Kısım ---------------------------------->
+        <div class="quiz-container">
+            <div class="header">
+                <div class="title-logo">
+                    <p> Quiz Game </p>
+                    <i class="fa-brands fa-nfc-directional"></i>
+                </div>
+                <div class="timer">
+                    <div class="time-text">Kalan Süre</div>
+                    <div class="time-second">10</div>
+                </div>
+                <div class="time-line"></div>
+            </div>
+            <div class="content">
+                <p class="question-text">
+                    <!-- <span> Bu uygulama bugün bitecek mi?</span> -->
+                </p>
+                <div class="choices-container">
+                    <!-- <div class="choice">
+                        <span><b>a:</b>  Belki</span>
+                        <div class="icon"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="choice">
+                        <span><b>b:</b>  Yarın</span>
+                        <div class="icon"><i class="fas fa-times"></i></div>
+                    </div>
+                    <div class="choice">
+                        <span><b>c:</b>  Asla</span>
+                        <div class="icon"><i class="fas fa-times"></i></div>
+                    </div>
+                    <div class="choice">
+                        <span><b>d:</b>  Tabikide Bebeğim</span>
+                        <div class="icon"><i class="fas fa-times"></i></div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="footer">
+                <div class="question_index">
+                    <!-- <span>4 / 1</span> -->
+                </div>
+                <button class="btn-next">Sonraki Soru</button>
+            </div>
+        </div>
+            <div class="score_box">
+                <div class="icon"><i class="fas fa fa-crown"></i></div>
+                <div class="score_text"></div>
+                    <div class="buttons">
+                        <button class="btn btn_replay">Tekrar Başlat</button>
+                        <button class="btn btn_quit">Testi Bitir</button>
+                    </div>
+            </div>
+        <!----------------------------------- Quiz Ekranının Olduğu Kısım ---------------------------------->
+
+
+    </body>
+    <script src="./soru.js"></script>
+    <script src="./yazılımSorular.js"></script>
+    <script src="./quiz.js"></script>
+    <script src="./UI.js"></script>
+    <script src="./script.js"></script>
+</html>

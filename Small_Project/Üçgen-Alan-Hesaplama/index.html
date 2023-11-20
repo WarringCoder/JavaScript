@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Üçgen Alan Hesaplama</title>
+        <style>
+            .container
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                height: 86vh;
+            }
+            
+            .input-group
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="head1">Üçgen Alan Hesaplama</h2>
+            <div class="input-group">
+                <div class="input">
+                    <span style="margin-right:2.03rem ;">Taban : </span><input type="text" placeholder="Girirniz..." id="tbn">
+                </div>
+                <div class="input">
+                    <span style="margin-right:0.4rem ;">Yükseklik : </span><input type="text" placeholder="Girirniz..." id="ykslk">
+                </div>
+            </div>
+            <button id="btn" class="btnn">HESAPLA</button>
+            <div id="sonuc" class="sonuc-s"></div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>

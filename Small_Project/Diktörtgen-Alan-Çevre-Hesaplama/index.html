@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dikdörtgen Alan-Çevre Hesaplama</title>
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+            crossorigin="anonymous"
+        >
+        <style>
+            body
+            {
+               background-color:lightgray;
+            }
+
+            .container-full
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                height: 85vh;
+            }
+
+            .input-group
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.3rem;
+            }
+
+            .sonuc-container
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.2rem;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container-full">
+            <h2 class="head mb-4">Dikdörtgen Alan-Çevre Hesapla</h2>
+            <div class="input-group ">
+                <input type="text" class="" placeholder="Kısa Kenarı Giriniz" id="kısa-kenar">
+                <input type="text" class="" placeholder="Uzun Kenarı Giriniz" id="uzun-kenar">
+            </div>
+            <div class="btn btn-dark" id="btn">HESAPLA</div>
+            <div class="container" id="hesaplandı"></div>
+        </div>
+
+        <script src="./script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,442 @@
+/* 
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; 
+*/
+
+
+/*  ----------------------------- Giriş kısmı ve Butonların olduğu Kısım -----------------------------  */
+.start-container
+{
+   width: 80%;
+   height: 80vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   margin: auto;
+}
+
+.title-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.9rem;
+    margin-top: 2.4rem;
+}
+
+.title-container p
+{
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    border-bottom: 0.1rem solid black;
+    padding-bottom: 0.5rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin-right: -1rem;
+}
+
+.title-p-remove
+{
+    opacity: 0;
+    pointer-events : none;
+}
+
+.title-span-remove
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.title-container span
+{
+    font-size: 2.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: #00ABB3;
+}
+
+.title-container i
+{
+    font-size: 3rem;
+    color: #00ABB3;
+    animation: logo infinite 5s;
+}
+
+@keyframes logo 
+{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.title-icon-add
+{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.button-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.7rem;
+    flex-wrap: wrap;
+}
+
+.button-container-remove
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btn
+{
+    padding: 0.9rem 0rem 0.9rem 0rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #08a6ae;
+    color: rgba(255, 255, 255, 0.97);
+    transition: 0.18s;
+    letter-spacing: 0.1rem;
+    width: 12rem;
+}
+
+.btn:hover
+{
+   background-color: #3C4048;
+   color: white;
+}
+
+.btn i
+{
+    margin-right: 0.4rem;
+    font-size: 1.1rem;
+}
+
+/*  ----------------------------- Giriş kısmı ve Butonların olduğu Kısım -----------------------------  */
+
+
+
+/*      ----------------------------------- Quiz Ekranının Olduğu Kısım ----------------------------------  */
+
+.quiz-container
+{
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    opacity: 0;
+    pointer-events:none;
+    transition: 0.7s;
+    margin-top: 0.4rem;
+}
+
+.quiz-container-add
+{
+    transition: 0.4s;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.quiz-container .header
+{
+    height: 4.9rem;
+    width: 100%;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.quiz-container .title-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 1.82rem;
+
+}
+
+.quiz-container .title-logo p
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.34rem;
+    margin: auto;
+}
+
+.quiz-container .title-logo .fa-nfc-directional
+{
+    font-size: 1.3rem;
+    margin: auto;
+}
+
+.quiz-container .timer
+{
+    margin-right: 1.8rem;
+    display: flex;
+}
+
+.quiz-container .timer .time-text
+{
+    background-color: #3C4048;
+    padding: 0.2rem 0.9rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.quiz-container .timer .time-second
+{
+    background-color: #00ABB3;
+    padding: 0.17rem 0.8rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.quiz-container .time-line
+{
+    position: absolute;
+    height: 0.27rem;
+    width: 7%;
+    background-color: #3C4048;
+    top: 4.9rem;
+}
+
+.quiz-container .content
+{
+    padding: 0.1rem 2rem;
+}
+
+.quiz-container .question-text
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 0.8rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.quiz-container .choices-container .choice
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.38rem 1.3rem;
+    width: 100%;
+    background-color:#00ABB3;
+    border-radius: 0.2rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.90rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.07rem;
+}
+
+.quiz-container .choices-container .choice:hover
+{
+    background-color: #3C4048;
+    color: white;
+}
+
+.quiz-container .choices-container .choice b
+{
+    margin-right: 1rem;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.937);
+}
+
+.quiz-container .choices-container .choice.correct 
+{
+    color: #ffffff !important;
+    background: #227234e7 !important;
+}
+
+.quiz-container .choices-container .choice.incorrect
+{
+    background-color: #b45845ee !important;
+    color: #ffffff;
+}
+
+.quiz-container .choices-container .choice.disabled
+{
+    pointer-events: none;
+}
+
+
+.quiz-container .choices-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.3rem 1.1rem;
+}
+
+.quiz-container .footer
+{
+    height: 4rem;
+    width: 100%;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin-top: 4rem;
+}
+
+.quiz-container .footer .question_index
+{
+    margin-left: 1.6rem;
+    background-color:#3c4048e1;
+    padding: 0.2rem 0.7rem;
+    color: white;
+    border-radius: 0.03rem;
+}
+
+.score-table
+{
+    font-size: 18rem;
+    color: #039ca4;
+}
+
+.quiz-container .footer .btn-next
+{
+    margin-right: 1.6rem;
+}
+
+.btn-next
+{
+    padding: 0.6rem 0.8rem;
+    background-color: #3C4048;
+    color: white;
+    border: 0.11rem solid #3C4048;
+    border-radius: 0.2rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btn-next:hover
+{
+    opacity: 0.8;
+}
+
+.btn-next-show
+{
+    background-color: #3C4048;
+    color: white;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/*      ----------------------------------- Quiz Ekranının Olduğu Kısım ----------------------------------  */
+
+/*     ------------------------------------      Score Box    -----------------------------------------------   */
+
+.active 
+{
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    top: 31%;
+    right: 27%;
+}
+
+.score_box {
+    width: 550px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
+    position: absolute;
+    top: 0%;
+    right: 25.5%;
+    transition: all 0.7s ease;
+    transform: scale(0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.1rem;
+    background-color: #EAEAEA;
+    border-radius: 0.78rem;
+
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.score_box_add
+{
+    opacity: 1;
+    pointer-events: auto;
+    top: 27%;
+    right: 25.5%;
+    transform: scale(1);
+}
+
+.score_box .icon {
+    font-size: 6.3rem;
+    color: #039ca4;
+    margin-bottom: 0.8rem;
+}
+
+.score_box .score_text {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.score_box .score_text strong
+{
+    margin: 0 0.1rem;
+    font-size: 1.1rem;
+}
+
+.score_box .buttons .btn
+{
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    width: 11rem;
+    background-color: #3C4048;
+    border: 0.1rem solid #3C4048;
+}
+
+.score_box .buttons .btn:hover
+{
+    background-color: #00ABB3;
+}
+
+.score_box .buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+/*     ------------------------------------      Score Box    -----------------------------------------------   */
