@@ -14,7 +14,7 @@ class Player
     nextMusic()
     {
 
-        if(this.index +1 != this.musiclist.length)
+        if(this.index +1 < this.musiclist.length)
         {
             this.index++;
         }
