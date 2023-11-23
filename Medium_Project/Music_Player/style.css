@@ -13,10 +13,10 @@ body
 {
     width: 24rem;  
     margin: auto;
-    margin-top: 3.3rem;
+    margin-top: 3.2rem;
     padding: 0;
     border-radius: 0.3rem;
-    box-shadow: 0 0 2.7rem rgba(0, 0, 0, 0.948);
+    box-shadow: 0 0 3.3rem rgba(0, 0, 0, 0.948);
 }
 
 
@@ -194,15 +194,17 @@ li.playing {
     position: absolute;
     top: 3rem;
     right: 3.5rem;
-    width: 7rem;
+    width: 5.7rem;
+    opacity: 0.85;
 }
 
 .react
 {
     position: absolute;
     top: 10.4rem;
-    right: 11.7rem;
-    width: 5rem;
+    right: 11.4rem;
+    width: 4rem;
+        opacity: 0.85;
 }
 
 .html
@@ -210,7 +212,8 @@ li.playing {
     position: absolute;
     top: 18.5rem;
     right: 16rem;
-    width: 2.5rem;
+    width: 2rem;
+        opacity: 0.85;
 }
 
 .css
@@ -218,8 +221,8 @@ li.playing {
     position: absolute;
     top: 18.07rem;
     right: 5.8rem;
-    width: 4rem;
-    
+    width: 3.5rem;
+    opacity: 0.85;
 }
 
 .node
@@ -227,7 +230,8 @@ li.playing {
     position: absolute;
     top: 25.07rem;
     right: 5.8rem;
-    width: 6.8rem;
+    width: 5.8rem;
+    opacity: 0.85;
 }
    
 .ex
@@ -235,7 +239,8 @@ li.playing {
     position: absolute;
     top: 31.07rem;
     right: 3.8rem;
-    width: 6.8rem;
+    width: 5.8rem;
+    opacity: 0.85;
 }
 
 .mongo
@@ -243,7 +248,8 @@ li.playing {
     position: absolute;
     top: 25.07rem;
     right: 16.8rem;
-    width: 6.8rem;
+    width: 5.8rem;
+    opacity: 0.85;
 }
 
 .native
@@ -251,7 +257,8 @@ li.playing {
     position: absolute;
     top: 35.07rem;
     right: 12.3rem;
-    width: 5.8rem;
+    width: 5rem;
+    opacity: 0.85;
 }
 
 .c 
@@ -259,7 +266,8 @@ li.playing {
     position: absolute;
     top: 3rem;
     left: 4rem;
-    width: 6.5rem;
+    width: 5.4rem;
+    opacity: 0.85;
 }
 
 .c-sharb
@@ -267,7 +275,8 @@ li.playing {
     position: absolute;
     top: 5.6rem;
     left: 15rem;
-    width: 7.1rem;
+    width: 5.9rem;
+    opacity: 0.85;
 }
 
 .c-plus
@@ -275,7 +284,8 @@ li.playing {
     position: absolute;
     top: 12rem;
     left: 8.5rem;
-    width: 6rem;   
+    width: 4.5rem; 
+    opacity: 0.85;
 }
 
 .mac
@@ -283,7 +293,8 @@ li.playing {
     position: absolute;
     top: 2.1rem;
     right: 16.5rem;
-    width: 5.7rem;
+    width: 4rem;
+    opacity: 0.85;
 }
 
 .python
@@ -291,7 +302,8 @@ li.playing {
     position: absolute;
     top: 22rem;
     left: 5.1rem;
-    width: 4.5rem; 
+    width: 3.3rem; 
+    opacity: 0.85;
 }
 
 .github
@@ -299,7 +311,8 @@ li.playing {
     position: absolute;
     top: 19.3rem;
     left: 16rem;
-    width: 4.5rem; 
+    width: 3.1rem; 
+    opacity: 0.85;
 }
 
 .vs
@@ -307,7 +320,8 @@ li.playing {
     position: absolute;
     top: 32rem;
     left: 7rem;
-    width: 2.6rem; 
+    width: 2.2rem; 
+    opacity: 0.85;
 }
 
 .vsc
@@ -315,7 +329,8 @@ li.playing {
     position: absolute;
     top: 28.8rem;
     left: 14rem;
-    width: 3rem;   
+    width: 2.3rem;  
+    opacity: 0.85;
 }
 
 .freelancer
@@ -323,7 +338,8 @@ li.playing {
     position: absolute;
     top:39.1rem;
     left: 14rem;
-    width: 9rem;   
+    width: 7.8rem;  
+    opacity: 0.85;
 }
 
 .crypto
@@ -331,15 +347,9 @@ li.playing {
     position: absolute;
     top:38.77rem;
     left: 3rem;
-    width: 9rem;   
+    width: 7.8rem;  
+    opacity: 0.85;
 }
-
-
-
-
-
-
-
 
 input[type=range] {
     height: 20px;
