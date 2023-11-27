@@ -17,5 +17,6 @@ const MusicList =
     new Music("Peaky Blinder / Otnicka - Duke Lika", "2019" ,"2.jpeg", "2.mp3"),
     new Music("Carmina Burana /  Carl Orff", "1936" ,"3.jpeg", "3.mp3"),
     new Music("Radioactive / İmagine Dragon", "2013", "4.jpg", "4.mp3"),
-    new Music("Ogment Op 84. Overture  /  Ludwig Van Beethoven", "1810", "5.jpeg", "5.mp3")
+    new Music("Ogment Op 84. Overture  /  Ludwig Van Beethoven", "1810", "5.jpeg", "5.mp3"),
+    new Music("Lonely  / İmagine Dragon", "2021", "6.jpeg", "6.mp3")
 ]
