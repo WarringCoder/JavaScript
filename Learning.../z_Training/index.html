@@ -68,30 +68,44 @@
         getCountry(text);
     });
 
-    function getCountry(country) {
-        const request = new XMLHttpRequest();
+    // function getCountry(country) {
+    //     const request = new XMLHttpRequest();
 
-        request.open('GET', 'https://restcountries.com/v3.1/name/' + country);
-        request.send();
+    //     request.open('GET', 'https://restcountries.com/v3.1/name/' + country);
+    //     request.send();
 
-        request.addEventListener('load', function() {
-            const data = JSON.parse(this.responseText);
-            console.log(data);            
-            renderCountry(data[0]);
+    //     request.addEventListener('load', function() {
+    //         const data = JSON.parse(this.responseText);
+    //         console.log(data);            
+    //         renderCountry(data[0]);
 
-            const countries = data[0].borders.toString();
+    //         const countries = data[0].borders.toString();
 
-            // load neighbors
-            const req = new XMLHttpRequest();
-            req.open('GET', 'https://restcountries.com/v3.1/alpha?codes=' + countries);
-            req.send();
+    //         // load neighbors
+    //         const req = new XMLHttpRequest();
+    //         req.open('GET', 'https://restcountries.com/v3.1/alpha?codes=' + countries);
+    //         req.send();
 
-            req.addEventListener('load', function() {
-                const data = JSON.parse(this.responseText);
-                renderNeighbors(data);
-            });
-        });
+    //         req.addEventListener('load', function() {
+    //             const data = JSON.parse(this.responseText);
+    //             renderNeighbors(data);
+    //         });
+    //     });
+    // }
+
+     function getCountry(country) {
+        fetch('https://restcountries.com/v3.1/name/' + country)
+            .then((response) => response.json())
+            .then((data) => {
+                renderCountry(data[0]);
+                const countries = data[0].borders.toString();
+
+                return fetch('https://restcountries.com/v3.1/alpha?codes=' + countries);
+            })
+            .then(response => response.json())
+            .then((data) => renderNeighbors(data));
     }
+
 
     function renderCountry(data) {        
        
