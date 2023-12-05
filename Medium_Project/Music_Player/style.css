@@ -204,7 +204,7 @@ li.playing {
     top: 10.4rem;
     right: 11.4rem;
     width: 5.1rem;
-    animation: react_working 10s infinite;
+    animation: react_working 15s infinite;
     animation-direction: alternate;
 }
 
