@@ -20,5 +20,6 @@ const MusicList =
     new Music("Ogment Op 84. Overture  /  Ludwig Van Beethoven", "1810", "5.jpeg", "5.mp3"),
     new Music("Lonely  / İmagine Dragon", "2021", "6.webp", "6.mp3"),
     new Music("Amour Plastique ", "2018", "7.jpg", "7.mp3"),
-    new Music("Interstellar / Hans Zimmer", "2014", "8.jpg", "8.mp3")
+    new Music("Interstellar / Hans Zimmer", "2014", "8.jpg", "8.mp3"),
+    new Music("Retour / Tony Anderson", "2021", "9.jpg", "9.mp3")
 ]
