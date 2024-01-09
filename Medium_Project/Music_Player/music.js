@@ -22,5 +22,6 @@ const MusicList =
     new Music("Amour Plastique ", "2018", "7.jpg", "7.mp3"),
     new Music("Interstellar / Hans Zimmer", "2014", "8.jpg", "8.mp3"),
     new Music("Retour / Tony Anderson", "2021", "9.jpg", "9.mp3"),
-    new Music ("Addiction / ANAÏS MVA", "2023", "10.jpeg", "10.mp3")
+    new Music ("Addiction / ANAÏS MVA", "2023", "10.jpeg", "10.mp3"),
+    new Music ("Opphenmeier / Ludwig Göransson", "2023", "11.jpg", "11.mp3")
 ]
